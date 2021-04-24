@@ -88,10 +88,27 @@
       <recent name="ru.lessons.sandbox" />
     </key>
   </component>
-  <component name="RunManager" selected="TestNG.ru.lessons.addressbook">
+  <component name="RunManager" selected="TestNG.ContactCreationTests">
     <configuration name="MyFirstProgram" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="ru.lessons.sandbox.MyFirstProgram" />
       <module name="sandbox.main" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ContactCreationTests" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="addressbook-web-tests.test" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ru.lessons.addressbook.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="ru.lessons.addressbook" />
+      <option name="MAIN_CLASS_NAME" value="ru.lessons.addressbook.ContactCreationTests" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -151,9 +168,11 @@
       <item itemvalue="TestNG.GroupCreationTests" />
       <item itemvalue="TestNG.PointTests" />
       <item itemvalue="TestNG.ru.lessons.addressbook" />
+      <item itemvalue="TestNG.ContactCreationTests" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="TestNG.ContactCreationTests" />
         <item itemvalue="TestNG.ru.lessons.addressbook" />
         <item itemvalue="TestNG.GroupCreationTests" />
         <item itemvalue="TestNG.PointTests" />
