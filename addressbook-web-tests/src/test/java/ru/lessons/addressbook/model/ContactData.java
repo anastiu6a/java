@@ -1,4 +1,4 @@
-package ru.lessons.addressbook;
+package ru.lessons.addressbook.model;
 
 public class ContactData {
   private final String firstname;
