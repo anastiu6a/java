@@ -37,17 +37,14 @@ public class ContactCreationTests {
   }
 
   private void logout() {
-
     wd.findElement(By.linkText("Logout")).click();
   }
 
   private void returnToHomepage() {
-
     wd.findElement(By.linkText("home")).click();
   }
 
   private void submitContactCreation() {
-
     wd.findElement(By.xpath("(//input[@name='submit'])[2]")).click();
   }
 
@@ -70,7 +67,6 @@ public class ContactCreationTests {
   }
 
   private void initContactCreation() {
-
     wd.findElement(By.linkText("add new")).click();
   }
 
