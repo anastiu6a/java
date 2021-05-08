@@ -89,7 +89,7 @@
       <recent name="ru.lessons.sandbox" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.Equality">
+  <component name="RunManager" selected="TestNG.GroupCreationTests">
     <configuration name="Equality" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="ru.lessons.sandbox.Equality" />
       <module name="sandbox.main" />
@@ -197,8 +197,8 @@
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.Equality" />
         <item itemvalue="TestNG.GroupCreationTests" />
+        <item itemvalue="Application.Equality" />
         <item itemvalue="TestNG.EguestionTests" />
         <item itemvalue="TestNG.ContactDeletionTests" />
         <item itemvalue="TestNG.ContactModificationTest" />
