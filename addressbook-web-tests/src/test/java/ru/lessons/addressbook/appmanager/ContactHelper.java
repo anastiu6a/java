@@ -3,6 +3,7 @@ package ru.lessons.addressbook.appmanager;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import ru.lessons.addressbook.model.ContactData;
+import ru.lessons.addressbook.model.GroupData;
 
 public class ContactHelper extends BaseHelper {
   public ContactHelper (WebDriver wd) {
@@ -29,7 +30,7 @@ public class ContactHelper extends BaseHelper {
   }
 
   public void initContactModification() {
-    click(By.xpath("(//img[@alt='Edit'])[2]"));
+    click(By.xpath("//img[@alt='Edit']"));
   }
 
   public void submitContactModification() {
@@ -39,5 +40,15 @@ public class ContactHelper extends BaseHelper {
   public void initContactDeletion() {
     click(By.xpath("//input[@value='Delete']"));
     wd.switchTo().alert().accept();
+  }
+
+  public boolean isThereAContact() {
+    return isElementPresent(By.name("selected[]"));
+  }
+
+  public void createContact(ContactData contact) {
+    initContactCreation();
+    fillContactForm(contact);
+    submitContactCreation();
   }
 }
