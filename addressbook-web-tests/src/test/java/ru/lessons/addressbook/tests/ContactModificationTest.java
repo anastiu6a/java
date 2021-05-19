@@ -1,5 +1,6 @@
 package ru.lessons.addressbook.tests;
 
+import org.testng.Assert;
 import org.testng.annotations.Test;
 import ru.lessons.addressbook.model.ContactData;
 
@@ -9,6 +10,7 @@ public class ContactModificationTest extends TestBase {
   public void testContactModification() {
 
     app.getNavigationHelper().returnToHomepage();
+    int before = app.getContactHelper().getContactCount();
     if (! app.getContactHelper().isThereAContact()) {
       app.getContactHelper().createContact(new ContactData("Test0", "Test-last-name", "+18888888888", "test@test.com", "Test-address"));
     }
@@ -18,6 +20,8 @@ public class ContactModificationTest extends TestBase {
     app.getContactHelper().fillContactForm(new ContactData("test1", "test2","test3","test4", "test5"));
     app.getContactHelper().submitContactModification();
     app.getNavigationHelper().returnToHomepage();
+    int after = app.getContactHelper().getContactCount();
+    Assert.assertEquals(after, before);
   }
 
 }
