@@ -1,11 +1,11 @@
 package ru.lessons.addressbook.model;
 
 public class ContactData {
-  private final String firstname;
-  private final String lastname;
-  private final String mobile;
-  private final String email;
-  private final String address;
+  public final String firstname;
+  public final String lastname;
+  public final String mobile;
+  public final String email;
+  public final String address;
 
   public ContactData(String firstname, String lastname, String mobile, String email, String address) {
     this.firstname = firstname;
