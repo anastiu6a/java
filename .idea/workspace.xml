@@ -75,7 +75,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="last_directory_selection" value="$PROJECT_DIR$/sandbox/src/main/java" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/addressbook-web-tests/build.gradle" />
-    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.5013089" />
     <property name="settings.editor.selected.configurable" value="build.tools" />
@@ -89,7 +89,7 @@
       <recent name="ru.lessons.sandbox" />
     </key>
   </component>
-  <component name="RunManager" selected="TestNG.GroupModificationTest">
+  <component name="RunManager" selected="TestNG.ContactDeletionTests">
     <configuration name="ContactCreationTests" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="addressbook-web-tests.test" />
       <extension name="coverage">
@@ -176,19 +176,19 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="TestNG.GroupCreationTests" />
       <item itemvalue="TestNG.GroupModificationTest" />
-      <item itemvalue="TestNG.ContactCreationTests" />
       <item itemvalue="TestNG.ContactDeletionTests" />
       <item itemvalue="TestNG.ContactModificationTest" />
+      <item itemvalue="TestNG.ContactCreationTests" />
+      <item itemvalue="TestNG.GroupCreationTests" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="TestNG.GroupModificationTest" />
         <item itemvalue="TestNG.ContactDeletionTests" />
-        <item itemvalue="TestNG.ContactModificationTest" />
         <item itemvalue="TestNG.ContactCreationTests" />
         <item itemvalue="TestNG.GroupCreationTests" />
+        <item itemvalue="TestNG.ContactModificationTest" />
+        <item itemvalue="TestNG.GroupModificationTest" />
       </list>
     </recent_temporary>
   </component>
