@@ -56,6 +56,14 @@ public class ContactHelper extends BaseHelper {
     submitContactCreation();
   }
 
+  public void modifyContact(int index, ContactData contact) {
+    returnToHomepage();
+    initContactModification(index);
+    fillContactForm(contact);
+    submitContactModification();
+    returnToHomepage();
+  }
+
   public int getContactCount() {
     return wd.findElements(By.name("selected[]")).size();
   }
@@ -71,6 +79,12 @@ public class ContactHelper extends BaseHelper {
       contacts.add(contact);
     }
     return contacts;
+  }
+  public void returnToHomepage() {
+    if (isElementPresent(By.id("maintable"))) {
+      return;
+    }
+    click(By.linkText("home"));
   }
   }
 
