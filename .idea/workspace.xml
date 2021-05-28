@@ -112,6 +112,23 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="ContactDeletionTests" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="addressbook-web-tests.test" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ru.lessons.addressbook.tests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="ru.lessons.addressbook.tests" />
+      <option name="MAIN_CLASS_NAME" value="ru.lessons.addressbook.tests.ContactDeletionTests" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="ContactModificationTest" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="addressbook-web-tests.test" />
       <extension name="coverage">
@@ -146,23 +163,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="GroupModificationTest" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="addressbook-web-tests.test" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="ru.lessons.addressbook.tests.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="ru.lessons.addressbook.tests" />
-      <option name="MAIN_CLASS_NAME" value="ru.lessons.addressbook.tests.GroupModificationTest" />
-      <option name="TEST_OBJECT" value="CLASS" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="ru.lessons.addressbook.tests" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="addressbook-web-tests.test" />
       <extension name="coverage">
@@ -182,7 +182,7 @@
     <list>
       <item itemvalue="TestNG.ContactCreationTests" />
       <item itemvalue="TestNG.GroupCreationTests" />
-      <item itemvalue="TestNG.GroupModificationTest" />
+      <item itemvalue="TestNG.ContactDeletionTests" />
       <item itemvalue="TestNG.ContactModificationTest" />
       <item itemvalue="TestNG.ru.lessons.addressbook.tests" />
     </list>
@@ -190,9 +190,9 @@
       <list>
         <item itemvalue="TestNG.ru.lessons.addressbook.tests" />
         <item itemvalue="TestNG.ContactModificationTest" />
-        <item itemvalue="TestNG.ContactCreationTests" />
-        <item itemvalue="TestNG.GroupModificationTest" />
         <item itemvalue="TestNG.GroupCreationTests" />
+        <item itemvalue="TestNG.ContactCreationTests" />
+        <item itemvalue="TestNG.ContactDeletionTests" />
       </list>
     </recent_temporary>
   </component>

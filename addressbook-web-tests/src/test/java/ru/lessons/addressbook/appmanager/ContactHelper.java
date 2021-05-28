@@ -4,10 +4,10 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import ru.lessons.addressbook.model.ContactData;
-import ru.lessons.addressbook.model.GroupData;
 
-import java.util.ArrayList;
+import java.util.HashSet;
 import java.util.List;
+import java.util.Set;
 
 public class ContactHelper extends BaseHelper {
   public ContactHelper (WebDriver wd) {
@@ -29,12 +29,12 @@ public class ContactHelper extends BaseHelper {
     click(By.linkText("add new"));
   }
 
-  public void selectContact(int index) {
-    wd.findElements(By.name("selected[]")).get(index).click();
+  public void selectContactById(int id) {
+    wd.findElement(By.cssSelector("input[id ='"+ id +"']")).click();
   }
 
-  public void initContactModification(int index) {
-    wd.findElements(By.xpath("//img[@alt='Edit']")).get(index).click();
+  public void initContactModificationById(int id) {
+    wd.findElement(By.cssSelector(String.format("a[href='edit.php?id=%s']", id))).click();
   }
 
   public void submitContactModification() {
@@ -56,16 +56,16 @@ public class ContactHelper extends BaseHelper {
     submitContactCreation();
   }
 
-  public void modify(int index, ContactData contact) {
+  public void modify(ContactData contact) {
     returnToHomepage();
-    initContactModification(index);
+    initContactModificationById(contact.getId());
     fillContactForm(contact);
     submitContactModification();
     returnToHomepage();
   }
 
-  public void delete(int index) {
-    selectContact(index);
+  public void delete(ContactData contact) {
+    selectContactById(contact.getId());
     initContactDeletion();
     returnToHomepage();
   }
@@ -74,8 +74,8 @@ public class ContactHelper extends BaseHelper {
     return wd.findElements(By.name("selected[]")).size();
   }
 
-  public List<ContactData> list() {
-    List<ContactData> contacts = new ArrayList<ContactData>();
+  public Set<ContactData> all() {
+    Set<ContactData> contacts = new HashSet<ContactData>();
     List<WebElement> elements = wd.findElements(By.name("entry"));
     for (WebElement element: elements){
       int id = Integer.parseInt(element.findElement(By.tagName("input")).getAttribute("id"));
@@ -85,11 +85,13 @@ public class ContactHelper extends BaseHelper {
     }
     return contacts;
   }
+
   public void returnToHomepage() {
     if (isElementPresent(By.id("maintable"))) {
       return;
     }
     click(By.linkText("home"));
   }
-  }
+
+}
 
